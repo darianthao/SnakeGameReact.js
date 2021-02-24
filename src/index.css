@@ -1,8 +1,10 @@
 .game-area {
   position: relative;
   margin: 50px auto;
-  width: 600px;
-  height: 600px;border: 2px solid #000;
+  width: 700px;
+  height: 700px;border: 2px solid #000;
+  border-width: thin;
+  background-image: linear-gradient(rgb(147, 143, 187), rgb(224, 89, 31));
 }
 .snake-dot {
   position: absolute;
@@ -17,7 +19,7 @@
   position: absolute;
   width: 2%;
   height: 2%;
-  background-color: rgb(138, 40, 40);
+  background-color: rgb(252, 0, 0);
   border: 1px solid #fff;
   z-index: 1;
 }

@@ -1,6 +1,13 @@
 import React, {Component} from 'react';
 import Snake from './Snake'; 
 import Food from './Food';
+import UIfx from 'uifx';
+
+// Sound FX Imports
+//import soundfile1 from './Sounds/snakeEat.mp3';
+
+
+//const soundEat = new UIfx({asset: soundfile1});
 
 const getRandomCoordinates = () => {
     let min = 1;
@@ -25,6 +32,7 @@ const initialState = {
 class App extends Component {
 
     state = initialState;
+
 
     componentDidMount() {
         setInterval(this.moveSnake, this.state.speed);
@@ -123,6 +131,7 @@ class App extends Component {
             snakeDots: newSnake
         })
     }
+
 
     increaseSpeed() {
         if (this.state.speed > 10) {
